@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMSATHI - All Govt Exams</title>
+    <style>
+        /* 1. Reset and Modern Fonts */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f0f2f5; /* Softer grey */
+            color: #1a1a1a;
+        }
+
+        /* 2. Professional Header with Gradient */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* 3. Improved Nav Bar */
+        nav {
+            background: #ffffff;
+            padding: 15px 5%;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .back-btn {
+            color: #1e3c72;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            color: #2ecc71; /* Mint green highlight */
+        }
+
+        /* 4. Layout Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .myclass {
+            text-align: left; /* Alignment change for professional look */
+            color: #1e3c72;
+            margin: 40px 0 20px;
+            font-size: 1.8rem;
+            border-left: 5px solid #2ecc71;
+            padding-left: 15px;
+        }
+
+        /* 5. The "Responsive" Grid */
+        .exam-grid {
+            display: grid;
+            /* This is the magic line: it fits as many as it can, then stretches them to fill the row */
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* 6. Modern Cards */
+        .exam-box {
+            background: white;
+            border-radius: 12px;
+            text-decoration:none; /* Removes underline from the link */
+            display: block;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border: 1px solid #eee;
+        }
+
+        .exam-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+            border-color: #2ecc71;
+        }
+
+        .img-container {
+            height: 180px;
+            overflow: hidden;
+        }
+
+        .exam-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .exam-box:hover img {
+            transform: scale(1.1);
+        }
+
+        .exam-box p {
+            padding: 20px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #1e3c72;
+            text-align: center;
+        }
+
+        /* Footer for completeness */
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>EXAMSAATHI</h1>
+        <p>Where Preparation Meets Success</p>
+    </header>
+
+    <nav>
+        <a href="index.html" class="back-btn">← Back to Dashboard</a>
+    </nav>
+
+    <div class="container" id="exams">
+        
+        <h2 class="myclass">Central Government Exams</h2>
+        <div class="exam-grid">
+            <a href="central govt exams/upsc.html" class="exam-box">
+                <div class="img-container"><img src="https://static.toiimg.com/thumb/msid-109356094,width-1280,height-720,resizemode-4/109356094.jpg" alt="UPSC"></div>
+                <p>UPSC Civil Services</p>
+            </a>
+
+            <a href="central govt exams/ssc.html" class="exam-box">
+                <div class="img-container"><img src="https://education.sakshi.com/sites/default/files/images/2025/05/13/ssc0-1747116874.jpg" alt="SSC"></div>
+                <p>SSC CGL / CHSL</p>
+            </a>
+
+            <a href="central govt exams/bank.html" class="exam-box">
+                <div class="img-container"><img src="https://img.freepik.com/free-photo/banking-saving-money-management-account-concept_53876-124787.jpg" alt="Banking"></div>
+                <p>Banking Exams</p>
+            </a>
+
+            <a href="central govt exams/defence.html" class="exam-box">
+                <div class="img-container"><img src="https://t3.ftcdn.net/jpg/08/03/40/78/360_F_803407848_IswD1ADeRom4QYh7DtFQELMjqyiCUwCq.jpg" alt="Defence"></div>
+                <p>Defence Exams</p>
+            </a>
+
+            <a href="central govt exams/railway.html" class="exam-box">
+                <div class="img-container"><img src="https://i.pinimg.com/originals/1b/d4/fb/1bd4fba9fcb7949c2de8ad604b8414a4.png" alt="Railways"></div>
+                <p>Railway Exams</p>
+            </a>
+
+            <a href="central govt exams/teaching.html" class="exam-box">
+                <div class="img-container"><img src="https://media.istockphoto.com/id/1376131442/photo/teacher-with-students-around-explaining-or-teaching-from-book-on-classroom-concept-of-support.jpg?s=612x612&w=0&k=20&c=jLTImrcv12R-5NMTF_XtRwfVYvI62_sIJQJbXBddT3A="
+                    alt="teaching"></div>
+                <p>Teaching Exams</p>
+            </a>
+
+            <a href="central govt exams/engin.html" class="exam-box">
+                <div class="img-container"><img src="https://www.avanse.com/blogs/images/Blog_14sept.jpg" alt="engineering"></div>
+                <p>Engineering & Technical Exams</p>
+            </a>
+
+            <a href="central govt exams/agri.html" class="exam-box">
+                <div class="img-container"><img src="https://i0.wp.com/globalkashmir.net/wp-content/uploads/2023/07/image-2-6.png?fit=850%2C492&ssl=1"
+                    alt="agriculture"></div>
+                <p>Agriculture and Allied Exams</p>
+            </a>
+
+            <a href="central govt exams/law.html" class="exam-box">
+                <div class="img-container"><img src="https://blog.ipleaders.in/wp-content/uploads/2020/08/O-17.jpg" alt="law and judiciary"></div>
+                <p>Law and Judiciary Exams</p>
+            </a>
+        </div>
+
+        <h2 class="myclass">All Collages/Universities Entrance Exams</h2>
+        <div class="exam-grid">
+            <a href="univesity entrace/medicalentrance.html" class="exam-box">
+                <div class="img-container"><img src="https://images.livemint.com/img/2021/04/19/600x338/2020-10-30T180501Z_329280120_RC26TJ9JO34I_RTRMADP_3_HEALTH-CORONAVIRUS-FRANCE-HOSPITAL_1604144490157_1604144511799_1618823314166.JPG" alt="medicalentrance"></div>
+                <p>Medical Entrance Exams</p>
+            </a>
+
+            <a href="univesity entrace/engentrance.html" class="exam-box">
+                <div class="img-container"><img src="https://images.stockcake.com/public/e/b/3/eb39d646-8acf-4d5c-a7f2-4c551ce59604_large/engineering-team-working-stockcake.jpg" alt=engentrance"></div>
+                <p>Engineering Entrance Exams</p>
+            </a>
+
+            <a href="univesity entrace/lawentrance.html" class="exam-box">
+                <div class="img-container"><img src="https://muitnoida.home.blog/wp-content/uploads/2020/03/law-entrance-exams-2017-18-for-llb-llm-entrance-test-for-law.jpg" alt="lawentrance"></div>
+                <p>Law Entrance Exams</p>
+            </a>
+
+            <a href="univesity entrace/managemententranc.html" class="exam-box">
+                <div class="img-container"><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210207205415/Top-Management-Entrance-Exams-To-Take-After-Graduation.png" alt="manentrance"></div>
+                <p>Management Entrance Exam</p>
+            </a>
+
+            <a href="univesity entrace/teachingentrance.html" class="exam-box">
+                <div class="img-container"><img src="https://cdn.prod.website-files.com/6744bdb342b0a7660e7b7c7d/67e0ef740cd3b1fcd799fd68_teaching-strategies-header-67e0ef668616a.webp" alt="techentrance"></div>
+                <p>Teaching Entrance Exams</p>
+            </a>
+
+            <a href="univesity entrace/defenceentrance.html" class="exam-box">
+                <div class="img-container"><img src="https://learnwithsumit.in/wp-content/uploads/2022/09/2d47e859a521dbd67c8f3323affced2f.jpg" alt="defentrance"></div>
+                <p>Defence Entrance Exam</p>
+            </a> 
+
+            
+            <a href="univesity entrace/designentrance.html" class="exam-box">
+                <div class="img-container"><img src="https://www.iiad.edu.in/wp-content/uploads/2025/02/nid5.webp" alt="designentrance"></div>
+                <p>Design Entrance Exam</p>
+            </a>
+
+            <a href="univesity entrace/massentrance.html" class="exam-box">
+                <div class="img-container"><img src="https://media.istockphoto.com/id/518185738/photo/child-drawing-top-view-artwork-workplace-with-creative-accessories.jpg?s=612x612&w=0&k=20&c=VquqIgnEQRvjku7UPht4ehNnFPMqmSKwwopUmMjC0kY=" alt="artsentrance"></div>
+                <p>Arts/Mass Communication Entrance Exam</p>
+            </a>
+
+
+            
+        </div>
+
+        <h2 class="myclass">Karnataka State Exams</h2>
+        <div class="exam-grid">
+            <a href="karnataka exams/kpsc.html" class="exam-box">
+                <div class="img-container"><img src="https://images.news18.com/kannada/uploads/2023/01/kpsc-6.jpg" alt="KPSC"></div>
+                <p>KPSC</p>
+            </a>
+
+            <a href="karnataka exams/karpolice.html" class="exam-box">
+                <div class="img-container"><img src="https://assets.thehansindia.com/h-upload/2021/03/21/1045746-police-department.webp" alt="Police"></div>
+                <p>Karnataka Police Exams</p>
+            </a>
+
+            <a href="karnataka exams/teacher.html" class="exam-box">
+                <div class="img-container"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnGFojcWl8UtmVJAHMD3i2eTHFgo5mVjMw0A&s" alt="Teaching"></div>
+                <p>Teaching Exams</p>
+            </a>
+
+            <a href="transport.html" class="exam-box">
+                <div class="img-container"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKwDrM8EBGuGneRfb-3ipto3Yt5cpydW400Q&s" alt="transport"></div>
+                <p>Transport Department</p>
+            </a>
+
+            <a href="village.html" class="exam-box">
+                <div class="img-container"><img src="https://fl-i.thgim.com/public/incoming/vx8hxk/article66139174.ece/alternates/LANDSCAPE_660/IMG_9775_5_7_2022_19_28__2_1_J1A0HPUB.jpg" alt="village"></div>
+                <p>Village and Rural Development</p>
+            </a>
+
+            <a href="karnataka exams/health.html" class="exam-box">
+                <div class="img-container"><img src="https://static.toiimg.com/thumb/msid-53004364,width-1280,height-720,resizemode-4/53004364.jpg" alt="health"></div>
+                <p>Health Department</p>
+            </a>
+
+            <a href="revenue.html" class="exam-box">
+                <div class="img-container"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQalA53MbFPdIVU4W36ReGb_2Uyu7lPKGN4pw&s" alt="revenue"></div>
+                <p>Revenue Department</p>
+            </a>
+
+            <a href="forest.html" class="exam-box">
+                <div class="img-container"><img src="https://kudremukhanationalpark.in/img/logo.png" alt="forest"></div>
+                <p>Forest Department</p>
+            </a>
+
+    </div>
+
+    <footer>
+        <p>© 2026 EXAMSATHI Portal | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
